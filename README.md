@@ -1,10 +1,10 @@
 # Simple-Product-App
 Simple app to perform CRUD operations using NodeJs and AngularJs
 
-Tools:
+**Tools:**
 Mongodb Database, mongoose, Express Framework
 
-Installation
+**Installation**
 
 -Clone Repository
 
