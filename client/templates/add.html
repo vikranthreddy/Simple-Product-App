@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span>  Add new product</p>
+    </div>
+    <div class="panel-body">
+        <form ng-submit="addProduct()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" ng-model="product.name" required="">
+
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" class="form-control" id="description" ng-model="product.description" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" id="price" ng-model="product.price" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Currency:</label>
+                <input type="text" class="form-control" id="currency" ng-model="product.currency" required="" ng-maxlength=3 ng-minlength=3>
+
+            </div>
+
+
+            <button type="submit"  style="color:#5bc0de;" class="btn btn-default">Save</button>
+            <a href="#/products" class="btn btn-default"> Cancel</a>
+        </form>
+        </div>
+    </div>

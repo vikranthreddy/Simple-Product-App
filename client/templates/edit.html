@@ -1,0 +1,30 @@
+<div class="panel panel-default" ng-init="showProduct()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> Edit Product</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateProduct()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="product.name" value="product.name" required="">
+    </div>
+    <div class="form-group">
+      <label for="dept">Description:</label>
+      <input type="text" class="form-control" id="dept" ng-model="product.description" value="product.description" required="">
+    </div>
+    <div class="form-group">
+      <label for="area">Price:</label>
+      <input type="text" class="form-control" id="area" ng-model="product.price" value="product.price" required="">
+    </div>
+    
+      <div class="form-group">
+      <label for="salary">Currency :</label>
+      <input type="text" class="form-control" id="currency" ng-model="product.currency" value="product.currency" required="" ng-maxlength=3 ng-minlength=3>
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Update</button>
+    <a href="#/products" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>
+
